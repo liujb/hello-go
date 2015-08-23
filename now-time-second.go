@@ -1,12 +1,11 @@
 package main
 
-import(
-    "fmt"
-    "time"
+import (
+	"fmt"
+	"time"
 )
 
-
-func main(){
-    second := time.Now().Unix();
-    fmt.Println(second)
+func main() {
+	second := time.Now().Unix()
+	fmt.Println(second)
 }

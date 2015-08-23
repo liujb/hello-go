@@ -1,9 +1,9 @@
 package main
 
 import (
-    "net/http"
+	"net/http"
 )
 
-func main(){
-    http.ListenAndServe(":8021", nil)        
+func main() {
+	http.ListenAndServe(":8021", nil)
 }
