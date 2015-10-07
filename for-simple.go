@@ -7,5 +7,6 @@ func main() {
 	for sum < 1000 {
 		sum += 1
 	}
+
 	fmt.Println(sum)
 }

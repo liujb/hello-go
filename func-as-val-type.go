@@ -5,6 +5,7 @@ import "fmt"
 // 定义函数变量
 type testInt func(int) bool
 
+// 判断偶数
 func isOdd(integer int) bool {
 	if integer%2 == 0 {
 		return false
@@ -12,6 +13,7 @@ func isOdd(integer int) bool {
 	return true
 }
 
+// 判断奇数
 func isEven(integer int) bool {
 	if integer%2 == 0 {
 		return true
@@ -19,10 +21,11 @@ func isEven(integer int) bool {
 	return false
 }
 
-func filter(slice []int, f testInt) []int {
+// 过滤slice，传入不同的handler
+func filter(slice []int, fn testInt) []int {
 	var result []int
 	for _, v := range slice {
-		if f(v) {
+		if fn(v) {
 			result = append(result, v)
 		}
 	}

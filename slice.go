@@ -8,6 +8,10 @@ var dst []byte
 
 func main() {
 	slice := []byte{'h', 'h', 'n', 'm'}
+
+	for k, v := range slice {
+		fmt.Println(k, v)
+	}
 	fmt.Println(len(slice))
 	fmt.Println(cap(slice))
 
