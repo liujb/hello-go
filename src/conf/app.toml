@@ -1,0 +1,4 @@
+env = "dev"
+port = 7563
+appPath = "/Users/liujb/Dropbox/code/trace-driver/src/"
+logPath = "/Users/liujb/logs/trace-driver.go"
